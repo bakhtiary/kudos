@@ -1,0 +1,8 @@
+kudos.txt:
+The idea is that a project taking part in kudos will contain a kudos.json file in the root folder of it's repository. The kudos file contains a list of resources that it has used. Now resources is a general term, examples of resources are in the next section. The kudos file also contains the details of the developers of the system, this includes the paypal account for the developer.
+
+
+
+
+The crawler:
+The job of the crawler is to crawl the different kudos.txt
