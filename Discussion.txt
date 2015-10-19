@@ -1,0 +1,29 @@
+Abstract
+
+We propose a system to overcome the problems of funding in free software. The main goal of this system is to allow feedback down the chain of dependancies in a project. Furthermore the system is donation based and is designed to allow a peer 2 peer approach with no central nodes. Finally each donator decides how his donation is spent according to a policy of his choosing.
+
+This document discusses why such a system is needed and provides an overview of the concepts in the system.
+
+Introduction
+
+The current market for software is roughly a linear one where you get paid once for every person that gets to use your software. Incidently this model is the same for live stock, for every live stock that you sell you get paid a linear amount. In the live stock (or any other tangible good) market this model has promoted economies of scale. That is producers lower their per unit costs by increasing their production volume. In theory the customers are to benefit from this because market competition is thought to drive down prices so that it is comparable with production costs.
+
+Although the linear model, where you use one, pay for one, and get paid for one, has helped humanity come a long way, it is inefficient for markets where the majority of the value of goods is intellectual. Thus far, governments have implemented patenting system that has also served the economies well during the past centuries, but this is also becoming inefficient given the rapid pace of science and technology. Indeed it is argued that it has even stymied the advance of some fields.
+
+The software industry is an extreme case where the intellectual value of goods dwarfs the physical value. Here the patent laws have posed many problem which has resulted in the free software movement. Strictly speaking free software is also roughly a linear payback system, albeit one with a slope of zero. Humour aside, free software promises widely available tools, protocals and standards leading to world wide colaboration. 
+
+The main premise of this article is that free software needs a feedback system, but not one that is a "market". The main goals of this feedback system is to identify where more collaboration is needed and then drive funds towards those areas so as to fill the void. Furthermore the system is based on democratic donations, that is each person gets to decide where his funds go. Finally to comply with the spirit of free software we propose a open protocal that allows different providers to implement this system and function in a distributed manner.
+
+Given that the 
+
+
+Parts of the system
+
+A project taking part in kudos will contain a kudos.json file in the root folder of it's repository. The kudos file contains a list of resources that it has used. Now resources is a general term, examples of resources are in the next section. The kudos file also contains the details of the developers of the system, this includes the paypal account for the developer.
+
+
+
+
+//This is a dotation based system where the donation is distributed to all projects contributing to a system. Each project provides a kudos file that describes it's dependencies.  A person can choose a funding scheme to help the projects or goals that he likes. A funding scheme uses a crawler to crawl and index the kudos files of as many projects that it can find. Furthermore a funding scheme can have different distribution policies. Every time a user donates to a specific project, the money is distributed between the projects that helped the existence of the project in question. The distribution is based on the policy chosen by the person making the funding.
+
+
