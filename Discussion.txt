@@ -12,7 +12,7 @@ Although the linear model, where you use one, pay for one, and get paid for one,
 
 The software industry is an extreme case where the intellectual value of goods dwarfs the physical value. Here the patent laws have posed many problem which has resulted in the free software movement. Strictly speaking free software is also roughly a linear payback system, albeit one with a slope of zero. Humour aside, free software promises widely available tools, protocals and standards leading to world wide colaboration. 
 
-The main premise of this article is that free software needs a feedback system, but not one that is a "market". The main goals of this feedback system is to identify where more collaboration is needed and then drive funds towards those areas so as to fill the void. Furthermore the system is based on democratic donations, that is each person gets to decide where his funds go. Finally to comply with the spirit of free software we propose a open protocal that allows different providers to implement this system and function in a distributed manner.
+The main premise of this article is that free software needs a feedback system, but not one that is a "market". The main goals of this feedback system is to identify where more collaboration is needed and then drive funds towards those areas so as to fill the void. Furthermore the system should be based on democratic donations, that is each person gets to decide where his funds go. That is to say right now we have faith in humanity to decide what is best for itself. Finally to comply with the spirit of free software it needs to be based a open protocal that allows all parts of the system to be replaced by different actors.
 
 Given that the 
 
