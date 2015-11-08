@@ -1,25 +1,57 @@
-Abstract
+*Abstract
 
 We propose a system to overcome the problems of funding in free software. The main goal of this system is to allow feedback down the chain of dependancies in a project. Furthermore the system is donation based and is designed to allow a peer 2 peer approach with no central nodes. Finally each donator decides how his donation is spent according to a policy of his choosing.
 
 This document discusses why such a system is needed and provides an overview of the concepts in the system.
 
-Introduction
+*Introduction
 
-The current market for software is roughly a linear one where you get paid once for every person that gets to use your software. Incidently this model is the same for live stock, for every live stock that you sell you get paid a linear amount. In the live stock (or any other tangible good) market this model has promoted economies of scale. That is producers lower their per unit costs by increasing their production volume. In theory the customers are to benefit from this because market competition is thought to drive down prices so that it is comparable with production costs.
+The current market for software is roughly a linear one where you get paid once for every person that gets to use your software. Incidently this model is the same for live stock, for every animal that you sell you get paid a fixed amount. In the live stock (or any other tangible good) market this model has promoted economies of scale. That is producers lower their per unit costs by increasing their production volume. In theory the customers are to benefit from this because market competition is thought to drive down prices so that it is comparable with production costs.
 
 Although the linear model, where you use one, pay for one, and get paid for one, has helped humanity come a long way, it is inefficient for markets where the majority of the value of goods is intellectual. Thus far, governments have implemented patenting system that has also served the economies well during the past centuries, but this is also becoming inefficient given the rapid pace of science and technology. Indeed it is argued that it has even stymied the advance of some fields.
 
-The software industry is an extreme case where the intellectual value of goods dwarfs the physical value. Here the patent laws have posed many problem which has resulted in the free software movement. Strictly speaking free software is also roughly a linear payback system, albeit one with a slope of zero. Humour aside, free software promises widely available tools, protocals and standards leading to world wide colaboration. 
+The software industry is an extreme case where the intellectual value of goods dwarfs the physical value. Here the patent laws have posed many problem which has resulted in the free software movement. The free software movement is about software that is able to be shared and modified. The movement tries to express this in the phrase "free as in speech" as opposed to "free as in beer". Although the "free speech" aspect of the movement has also led to much "free beer".
+
+Much of the projects in the free software community have a linear payback system, albeit one with a slope of zero. Many developers working on free software do so in their own time and as side project and with this model, the success of these projects does not necessarily mean the expansion of the projects. 
+
+With this, free software has not been able to deliver as well as some have hoped it would. For example in the operating system world, although free software has made large strides, we see newly arrived operating systems, like iOS, android (android is not as "free" as you'd want it to be) and windows 7, that are able to resonate better the consumer. 
+
+Finally The authors of this paper argue that the main reason for the lack of success in free software is a resource related one. The argument is that you can only go so far using developers' free time and producing a well packaged, tested and polished software. And that from a point on the success of a piece of software need to result into a feedback that helps develop that piece and the related resources further.
 
 The main premise of this article is that free software needs a feedback system, but not one that is a "market". The main goals of this feedback system is to identify where more collaboration is needed and then drive funds towards those areas so as to fill the void. Furthermore the system should be based on democratic donations, that is each person gets to decide where his funds go. That is to say right now we have faith in humanity to decide what is best for itself. Finally to comply with the spirit of free software it needs to be based a open protocal that allows all parts of the system to be replaced by different actors.
 
-Given that the 
+*Parts of the system
+
+Intellectual goods are goods that can be represented in the form of a file. They are purely information and can be copied from one location to another with minimal cost. Services are also goods that require recurring costs, this cost may be a function of the number times and how a service is used. For example the cost of a ping service might be just a one time price of a server and the maintenance cost divided by the number of people using that service, while the cost of a service that prints objects might depend on what objects are printed.
+
+Developers are people who creating intellectual pieces. I presume that these pieces can be kept in a git repository online.
+
+Consumers are people who consume goods, note that a person can be a developer and a consumer at the same time.
+
+Donator is a person who consumes goods that have a cost. Because some service that are not purely intellectual may cost something for the consumer, the consumers are recommended to donate some amount proportional to the cost of the service to the intellectual goods making up that service.
+
+A dependency is whatever services and goods were used for making a project. This includes, but is not limited to, IDEs, programming lanuages specifications, music listened to during development, tools used for communication, free pizzas, etc ...
+
+A donation policy is a plan on how to distribute donated money. Different policies may exist and each donator chooses one policy. The donations of a donator is distributed according to his chosen policy.
+
+A distributor is a website or webservice that distributes donations according to the policies chosen by donators.
+
+*How it works.
+
+The developers of a project would have a kudos.txt file in the root directory.  This explains the dependencies of the project. Crawlers would crawl these file and build dependency graphs that show when and how projects have used each other.
+
+Furthermore each project would have a kudos donate link or button. If the user already has a chosen distributor then the link performs a donation according to the policies of the user. Otherwise the donation policy of the developer is used according to his chosen distributor.
+
+*Why would donators donate.
+
+In a normal donation system you would only reach the person who you hand the money to. In this system the donator can reach anyone who has collaborated to produce the final outcome and is also using the kudos system.
+
+*Why would devs use the kudos system.
+
+So that they would have the resources to expand their intellectual goods
 
 
-Parts of the system
-
-A project taking part in kudos will contain a kudos.json file in the root folder of it's repository. The kudos file contains a list of resources that it has used. Now resources is a general term, examples of resources are in the next section. The kudos file also contains the details of the developers of the system, this includes the paypal account for the developer.
+//A project taking part in kudos will contain a kudos.json file in the root folder of it's repository. The kudos file contains a list of resources that it has used. Now resources is a general term, examples of resources are in the next section. The kudos file also contains the details of the developers of the system, this includes the paypal account for the developer.
 
 
 
