@@ -21,7 +21,14 @@ The "dependencies" node and the "payment_preference" nodes are the main things a
 *"kudos_file": the address where the kudos file describing the project exists 
 "dependencies" can also contain:
 *"usage_type": This provides a description of how the dependency was useful. A list of standard uses will be given 
-*"utility_amount": How much, in comparision to the other dependencies" this was useful
+*"utility_amount": How much, in comparision to the other dependencies" this was useful.
+
+"usage_type": should contain one or more of the following:
+"library": part of the project was linked into the project 
+"resource": images, sounds and models.
+"science": research results were used from the dependecy.
+"entertainment": the developer was entertained by this dependency while doing the project
+
 
 The distributor:
 
