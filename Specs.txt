@@ -13,13 +13,15 @@ The "dependencies" node and the "payment_preference" nodes are the main things a
 
 "payment_preference" should contain exactly one of the following nodes:
 *"paypal_address": the address where the money should go
-
 "payment_preference" also can also contain:
-"payment_threshold": how much money should accumulate before a payment is made (in US dollars)
+*"currency": which currency does the person like (ordered List)
+*"payment_threshold": how much money should accumulate before a payment is made 
 
-"dependencies" is the
-
-
+"dependencies" is a list of other projects that this project uses. Each dependancy has exactly one of the following:
+*"kudos_file": the address where the kudos file describing the project exists 
+"dependencies" can also contain:
+*"usage_type": This provides a description of how the dependency was useful. A list of standard uses will be given 
+*"utility_amount": How much, in comparision to the other dependencies" this was useful
 
 The distributor:
 
