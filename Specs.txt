@@ -1,13 +1,33 @@
-kudos.txt:
-The idea is that a project taking part in kudos will contain a kudos.json file in the root folder of it's repository. The kudos file contains a list of resources that it has used. Now resources is a general term, examples of resources are in the next section. The kudos file also contains the details of the developers of the system, this includes the paypal account for the developer.
+kudos.json:
+
+Each project that takes part in kudos has a kudos.json. This file describes the dependencies used for creating that project.
+
+The root element of a kudos.json file contains:
+*"version": "0.1"
+// not yet implemented:*[optional]name: Main Dev Name
+*[optional]payment_preference: a node describing how this project wishes to be compensated
+// not yet implemented:*[optional]contact_info: a node describing how the person wishest to be contacted if at all.
+*dependencies: a list of dependencies.
+
+The "dependencies" node and the "payment_preference" nodes are the main things and we will give a description for them, 
+
+"payment_preference" should contain exactly one of the following nodes:
+*"paypal_address": the address where the money should go
+
+"payment_preference" also can also contain:
+"payment_threshold": how much money should accumulate before a payment is made (in US dollars)
+
+"dependencies" is the
 
 
 
 The distributor:
 
-This is a webservice that has two main jobs, first it needs to collect donations from the donators and distribute it according to the policies of the donator. Second it needs to publish it's donations so that all distributors can make an informed decision when alocating the donations of its members.
+This is a webservice that has two main jobs, first it needs to collect donations from the donators and distribute it according to the policies of the donator. Second it needs to publish it's donations so that all other distributors can make an informed decision when alocating the donations of its members.
 
 The crawler:
-A distributor would use a crawler to crawl the kudos files so that the distributor can create a dependency graph. 
+A distributor would use a crawler to crawl the kudos files so that the distributor can create a dependency graph. Furthermore it provides a mechanism for the crawler to be notified of changes in a kudos file. Finally, it also recrawls previous kudos file to update changes.
+
+
 
 
